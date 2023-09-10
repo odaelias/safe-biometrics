@@ -1,0 +1,181 @@
+:root {
+    --lightblue: #4DC3FA;
+    --darkblue: #141e30;
+    --mediumblue: #243b55;
+}
+
+html {
+    background: linear-gradient(var(--darkblue), var(--mediumblue));
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: large;
+    color: white;
+}
+
+a {
+    color: var(--lightblue);
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 50%;
+}
+
+header {
+    width: 95%;
+    padding: 1% 0 0 1%;
+}
+
+header img {
+    width: 5vw;
+    height: 5vw;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav a {
+    margin: 0 2vw 0 2vw;
+}
+
+main {
+    margin: 3%;
+    width: 90%;
+}
+
+h1 {
+    color: var(--lightblue);
+}
+
+main,
+footer {
+    animation: fadeInAnimation forwards 1s;
+}
+
+.index section {
+    width: 48%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.index h1 {
+    font-size: 400%;
+    margin-bottom: -1%;
+}
+
+.index p {
+    line-height: 150%;
+}
+
+.index main {
+    display: inline-block;
+    text-align: center;
+}
+
+.index main img {
+    animation: fadeInAnimation forwards 5s;
+}
+
+.equipe footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--darkblue);
+    color: white;
+    text-align: center;
+}
+
+.equipe main {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.equipe main img {
+    border-radius: 50%;
+    width: 15vw;
+    height: 15vw;
+    animation: 1.3s ease 0s beat;
+    margin: 0 1vw 0 1vw;
+    cursor: pointer;
+}
+
+@keyframes beat {
+
+    0%,
+    50%,
+    100% {
+        transform: scale(1, 1);
+    }
+
+    30%,
+    80% {
+        transform: scale(0.90, 0.90);
+    }
+}
+
+.equipe main img:hover~h2 {
+    animation: fadeInAnimation forwards 1s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.equipe main section {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.equipe h2 {
+    background-color: var(--lightblue);
+    padding: 0.5vw 0 0.5vw 0;
+    margin: 3vw 3vw 0 3vw;
+    text-transform: uppercase;
+    color: white;
+    font-weight: normal;
+    font-size: larger;
+    opacity: 0;
+}
+
+.equipe footer section {
+    padding: 0.5vw 0 0.5vw 0;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.equipe footer section:nth-child(2) {
+    margin-top: 1vw;
+    margin-right: 3vw;
+    float: right;
+}
+
+.equipe footer section:nth-child(1) {
+    margin-left: 3vw;
+    float: left;
+}
+
+.equipe footer svg {
+    height: 1.75vw;
+    margin: 0 0.5vw 0 0.5vw;
+}
+
+.equipe footer svg:hover {
+    cursor: pointer;
+}
+
+.equipe footer h1 {
+    font-weight: normal;
+    font-size: large;
+}
