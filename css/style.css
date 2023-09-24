@@ -7,7 +7,8 @@
 html {
     background: linear-gradient(var(--darkblue), var(--mediumblue));
     background-repeat: no-repeat;
-    height: 100%;
+    min-height: 100%;
+    max-width: 100%;
     font-family: sans-serif;
     font-size: large;
     color: white;
@@ -23,8 +24,9 @@ a:hover {
 }
 
 header {
-    width: 95%;
+    max-width: 100%;
     padding: 1% 0 0 1%;
+    top: 0;
 }
 
 header img {
@@ -44,21 +46,43 @@ nav a {
 }
 
 main {
-    margin: 3%;
-    width: 90%;
+    width: 100%;
 }
 
 h1 {
     color: var(--lightblue);
 }
 
+button {
+    background: transparent;
+    border-color: var(--lightblue);
+    border-radius: 30px 0;
+    color: var(--lightblue);
+    font-size: x-large;
+    padding: 1% 2%;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.25s, color 0.25s, border-radius 0.25s, text-shadow 0.25s;
+}
+
+button:hover {
+    background: var(--lightblue);
+    color: white;
+    border-radius: 30px;
+    text-shadow: var(--darkblue) 2px 2px 5px;
+}
+
+button:active {
+    opacity: 50%;
+}
+
 main,
 footer {
-    animation: fadeInAnimation forwards 1s;
+    animation: fadeInAnimation forwards 2s;
 }
 
 .index section {
-    width: 48%;
+    width: 45%;
     display: inline-block;
     vertical-align: middle;
 }
@@ -73,7 +97,10 @@ footer {
 }
 
 .index main {
-    display: inline-block;
+    position: fixed;
+    top: 30%;
+    width: fit-content;
+    block-size: fit-content;
     text-align: center;
 }
 
@@ -81,7 +108,7 @@ footer {
     animation: fadeInAnimation forwards 5s;
 }
 
-.equipe footer {
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -89,6 +116,10 @@ footer {
     background-color: var(--darkblue);
     color: white;
     text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 0;
 }
 
 .equipe main {
@@ -103,6 +134,7 @@ footer {
     animation: 1.3s ease 0s beat;
     margin: 0 1vw 0 1vw;
     cursor: pointer;
+    filter: grayscale(100%);
 }
 
 @keyframes beat {
@@ -133,49 +165,85 @@ footer {
     }
 }
 
+.equipe main img:hover {
+    filter: grayscale(0%);
+}
+
 .equipe main section {
     display: inline-block;
     vertical-align: middle;
 }
 
+.equipe main h1 {
+    margin-bottom: 3vw;
+}
+
 .equipe h2 {
     background-color: var(--lightblue);
+    border-radius: 30px 0;
+    text-shadow: var(--darkblue) 2px 2px 5px;
+    color: white;
     padding: 0.5vw 0 0.5vw 0;
     margin: 3vw 3vw 0 3vw;
     text-transform: uppercase;
-    color: white;
-    font-weight: normal;
+    font-weight: lighter;
     font-size: larger;
     opacity: 0;
 }
 
-.equipe footer section {
+.sistema main {
+    padding-bottom: 5vw;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.sistema main h1 {
+    text-align: left;
+    font-size: 200%;
+}
+
+.sistema main h2 {
+    text-align: left;
+}
+
+.sistema main p {
+    line-height: 150%;
+    padding: 0 3vw;
+    text-align: justify;
+}
+
+.sistema main a {
+    text-decoration: underline;
+}
+
+footer section {
     padding: 0.5vw 0 0.5vw 0;
     vertical-align: middle;
     display: inline-block;
 }
 
-.equipe footer section:nth-child(2) {
+footer section:nth-child(2) {
     margin-top: 1vw;
     margin-right: 3vw;
     float: right;
 }
 
-.equipe footer section:nth-child(1) {
+footer section:nth-child(1) {
     margin-left: 3vw;
     float: left;
 }
 
-.equipe footer svg {
+footer svg {
     height: 1.75vw;
     margin: 0 0.5vw 0 0.5vw;
 }
 
-.equipe footer svg:hover {
+footer svg:hover {
     cursor: pointer;
+    opacity: 50%;
 }
 
-.equipe footer h1 {
+footer h1 {
     font-weight: normal;
     font-size: large;
 }
