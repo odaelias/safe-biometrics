@@ -12,6 +12,7 @@ html {
     font-family: sans-serif;
     font-size: large;
     color: white;
+    cursor: crosshair;
 }
 
 a {
@@ -98,7 +99,6 @@ footer {
 
 .index main {
     position: fixed;
-    top: 30%;
     width: fit-content;
     block-size: fit-content;
     text-align: center;
@@ -106,6 +106,8 @@ footer {
 
 .index main img {
     animation: fadeInAnimation forwards 5s;
+    height: 30vw;
+    width: 30vw;
 }
 
 footer {
@@ -133,7 +135,7 @@ footer {
     height: 15vw;
     animation: 1.3s ease 0s beat;
     margin: 0 1vw 0 1vw;
-    cursor: pointer;
+    cursor: none;
     filter: grayscale(100%);
 }
 
@@ -192,28 +194,43 @@ footer {
 }
 
 .sistema main {
-    padding-bottom: 5vw;
+    padding: 2vw 0 8vw 0;
     vertical-align: middle;
     text-align: center;
+}
+
+.sistema main img {
+    width: 30vw;
+    height: 30vw;
 }
 
 .sistema main h1 {
     text-align: left;
     font-size: 200%;
+    margin-left: 8vw;
+}
+
+.sistema main h1:nth-child(1) {
+    width: 26vw;
+    text-align: justify;
 }
 
 .sistema main h2 {
     text-align: left;
+    margin-left: 11vw;
+    font-weight: 200;
 }
 
 .sistema main p {
     line-height: 150%;
     padding: 0 3vw;
     text-align: justify;
+    margin: 0 8vw 3vw 8vw;
 }
 
 .sistema main a {
     text-decoration: underline;
+    font-size: larger;
 }
 
 footer section {
