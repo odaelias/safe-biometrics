@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--icon bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!--style bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" />
+    <title>BIOMETRICS</title>
+  </head>
+
+  <body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><span class="text-warning">SAFE</span>BIOMETRICS</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Equipe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Suporte</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- end navbar -->
+
+    <!--   slider -->
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div id="home" class="carousel-inner">
+        <div class="carousel-item active">
+          <video
+            src="./img/1.mp4"
+            class="d-block w-101"
+            alt="..."
+            autoplay
+            muted
+            loop
+          ></video>
+          <div class="carousel-caption">
+            <h5>Software</h5>
+            <p>
+              Nós também desenvolvemos um sistema próprio para efetuar a chamada
+              dos estudantes, faça o download logo abaixo.
+            </p>
+            <p><a href="#" class="btn btn-warning mt-3">Download</a></p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <video
+            src="./img/4.mp4"
+            class="d-block w-101"
+            alt="..."
+            autoplay
+            muted
+            loop
+          ></video>
+          <div class="carousel-caption">
+            <h5>Leitor Biométrico</h5>
+            <p>
+              Safe Biometrics, leitor biométrico com possivel integração com
+              dados com os de relatórios de presença virtuais já existentes.
+            </p>
+            <p><a href="#" class="btn btn-warning mt-3">Comprar</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <video
+            src="./img/3.mp4"
+            class="d-block w-101"
+            alt="..."
+            autoplay
+            muted
+            loop
+          ></video>
+          <div class="carousel-caption">
+            <h5>Funcionamento</h5>
+            <p>
+              Como que nosso sistema funciona? <br />
+              Veja como tudo foi pensado e desenvolvido.
+            </p>
+            <p><a href="#" class="btn btn-warning mt-3">Veja mais</a></p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--   end slider -->
+
+    <!--about section-->
+    <section id="about" class="about section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-12">
+            <div class="about-img">
+              <img
+                src="./img/preview-safe_biometrics.gif"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+            <div class="about-text">
+              <h2>Traga confiabilidade ao gerar relatórios</h2>
+              <p>
+                Safe Biometrics é um leitor biométrico de digital que integra
+                nosso sistema de armazenamento de dados com os de relatórios de
+                presença virtuais já existentes. Ideal para qualquer instituto
+                de ensino, tando para o que já usa qualquer aplicação de lista
+                de chamada, quanto o que quer começar a usar.
+              </p>
+              <a href="#" class="btn btn-warning">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="vazio">
+      <div>''</div>
+      <div>''</div>
+    </section>
+    <!--end of about section-->
+
+    <!--services section-->
+    <div id="services" class="services section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2>O que oferecemos?</h2>
+              <p>
+                Contratando nossa equipe você garante a melhor qualidade
+                possivel do mercado.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-white text-center bg-dark pb-2">
+              <div class="card-body">
+                <i class="bi bi-slack"></i>
+                <h3 class="card-title">Sustentabilidade</h3>
+                <p class="lead">
+                  A implementação de um sistema biométrico estudantil deve ser
+                  realizada com foco na sustentabilidade. Isso envolve a
+                  minimização de resíduos, o uso eficiente de energia, a
+                  proteção de dados, a acessibilidade e a conscientização
+                  ambiental.
+                </p>
+                <button class="btn btn-warning text-dark">Saiba mais</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-white text-center bg-dark pb-2">
+              <div class="card-body">
+                <i class="bi bi-subtract"></i>
+                <h3 class="card-title">Melhor qualidade</h3>
+                <p class="lead">
+                  Sistema biométrico com relatorio de presença, melhora a gestão
+                  de presença com precisão, automação, segurança e relatórios
+                  detalhados, garantindo dados confiáveis e facilitando
+                  auditorias, evitando erros.
+                </p>
+                <button class="btn btn-warning text-dark">Saiba mais</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-white text-center bg-dark pb-2">
+              <div class="card-body">
+                <i class="bi bi-cpu"></i>
+                <h3 class="card-title">Integração</h3>
+                <p class="lead">
+                  A integração de um sistema biométrico melhora a gestão de
+                  presença, aumentando a eficiência, permitindo atualização em
+                  tempo real, oferecendo facilidade de acesso e adaptando-se às
+                  necessidades da instituição.
+                </p>
+                <button class="btn btn-warning text-dark">Saiba mais</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end of services section-->
+
+    <!-- Portfolio -->
+    <div id="portfolio" class="portfolio section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2>Algumas instituições com nosso sistema</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-center bg-white pb-2">
+              <div class="card-body text-dark">
+                <div class="img-area mb-4">
+                  <img src="./img/efi.jpg" alt="" class="img-fluid" />
+                </div>
+                <h3 class="card-title">Etec Santa Ifigênia</h3>
+                <p class="lead">
+                  Uma das primeiras escolas a integrar o nosso sistema
+                </p>
+                <button class="btn bg-warning text-dark">Feedbacks</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-center bg-white pb-2">
+              <div class="card-body text-dark">
+                <div class="img-area mb-4">
+                  <img src="./img/mack.jpg" alt="" class="img-fluid" />
+                </div>
+                <h3 class="card-title">Mackenzie Higenópolis</h3>
+                <p class="lead">
+                  Primeira universidade a integrar o nosso sistema
+                </p>
+                <button class="btn bg-warning text-dark">Feedbacks</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-center bg-white pb-2">
+              <div class="card-body text-dark">
+                <div class="img-area mb-4">
+                  <img src="./img/etapa.jpg" alt="" class="img-fluid" />
+                </div>
+                <h3 class="card-title">Etapa</h3>
+                <p class="lead">Primeiro cursinho a integrar nosso sistema</p>
+                <button class="btn bg-warning text-dark">Feedbacks</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end of portfolio-->
+
+    <!--team section-->
+    <section id="team" class="team section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-left pb-3">
+              <h2>Nosso time</h2>
+              <p>Conheça um pouco sobre os desenvolvedores do projeto.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="card text-center">
+              <div class="card-body">
+                <img
+                  src="./img/caio.jpg"
+                  alt="Caio"
+                  class="img-fluid rounded-circle"
+                />
+                <h3 class="card-title py-1">Caio</h3>
+                <p class="card-text">Back-end</p>
+                <p class="socials">
+                  <i class="bi bi-github text-dark mx-1"></i>
+                  <i class="bi bi-linkedin text-dark mx-1"></i>
+                  <i class="bi bi-instagram text-dark mx-1"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="card text-center">
+              <div class="card-body">
+                <img
+                  src="./img/elias.jpg"
+                  alt="Elias"
+                  class="img-fluid rounded-circle"
+                />
+                <h3 class="card-title py-1">Elias</h3>
+                <p class="card-text">Full-Stack</p>
+                <p class="socials">
+                  <i class="bi bi-github text-dark mx-1"></i>
+                  <i class="bi bi-linkedin text-dark mx-1"></i>
+                  <i class="bi bi-instagram text-dark mx-1"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="card text-center">
+              <div class="card-body">
+                <img
+                  src="./img/igor.jpg"
+                  alt="Igor"
+                  class="img-fluid rounded-circle"
+                />
+                <h3 class="card-title py-1">Igor</h3>
+                <p class="card-text">Full-Stack</p>
+                <p class="socials">
+                  <i class="bi bi-github text-dark mx-1"></i>
+                  <i class="bi bi-linkedin text-dark mx-1"></i>
+                  <i class="bi bi-instagram text-dark mx-1"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="card text-center">
+              <div class="card-body">
+                <img
+                  src="./img/jonathan.jpg"
+                  alt="Jonathan"
+                  class="img-fluid rounded-circle"
+                />
+                <h3 class="card-title py-1">Jonathan</h3>
+                <p class="card-text">Back-end</p>
+                <p class="socials">
+                  <i class="bi bi-github text-dark mx-1"></i>
+                  <i class="bi bi-linkedin text-dark mx-1"></i>
+                  <i class="bi bi-instagram text-dark mx-1"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="card text-center">
+              <div class="card-body">
+                <img
+                  src="./img/let.jpg"
+                  alt="Leticia"
+                  class="img-fluid rounded-circle"
+                />
+                <h3 class="card-title py-1">Leticia</h3>
+                <p class="card-text">Back-end</p>
+                <p class="socials">
+                  <i class="bi bi-github text-dark mx-1"></i>
+                  <i class="bi bi-linkedin text-dark mx-1"></i>
+                  <i class="bi bi-instagram text-dark mx-1"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end of team section-->
+
+    <!--contact-->
+    <section id="contact" class="contact section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2>Entre em contato</h2>
+              <p>
+                Envie uma mensagem para nós, relatando seu problema ou sugestão.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row m-0">
+          <div class="col-md-12 p-0 pt-4 pb-4">
+            <form action="./email.php" method="post" class="bg-light p-4.m-auto">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      required
+                      placeholder="Seu nome inteiro"
+                      name="nome"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      required
+                      placeholder="Seu email"
+                      name="email"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <textarea
+                      rows="3"
+                      required
+                      class="form-control"
+                      placeholder="Escreva sua mensagem"
+                      name="msg"
+                    ></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-warning btn-lg bnt-block mt-3">
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end of contact-->
+
+    <!-- footer -->
+    <footer class="bg-dark p-1 text-center">
+      <div class="container">
+        <p class="text-white">
+          SAFEBIOMETRICS <i class="bi bi-c-circle"></i> Todos os direitos
+          reservados
+        </p>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
